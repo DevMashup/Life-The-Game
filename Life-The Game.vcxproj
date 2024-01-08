@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{0471a3ef-9652-403e-8521-853c22f4ec30}</ProjectGuid>
+    <RootNamespace>LifeTheGame</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)Dependencies/Includes</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)Dependencies/Includes</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)Dependencies/Includes</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(ProjectDir)Dependencies/Includes</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="Data\AppD.cpp" />
+    <ClCompile Include="Choices\AppC.cpp" />
+    <ClCompile Include="Data\Banks\BanksD.cpp" />
+    <ClCompile Include="Choices\Banks\BanksC.cpp" />
+    <ClCompile Include="Data\Banks\Online\BanksD_O.cpp" />
+    <ClCompile Include="Choices\Banks\Online\BanksC_O.cpp" />
+    <ClCompile Include="Data\Banks\Online\Mashup Inc\miBankD_O.cpp" />
+    <ClCompile Include="Choices\Banks\Online\Mashup Inc\miBankC_O.cpp" />
+    <ClCompile Include="Data\Banks\Online\Mashup Inc\Accounts\miCheckingsD.cpp" />
+    <ClCompile Include="Data\Banks\Online\Mashup Inc\Accounts\miSavingsD.cpp" />
+    <ClCompile Include="Data\Banks\Online\Sally%27 Finances\sfBankD_O.cpp" />
+    <ClCompile Include="Choices\Banks\Online\Sally%27s Finances\sfBankC_O.cpp" />
+    <ClCompile Include="Data\Banks\Online\Sally%27 Finances\Accounts\sfCheckingsD.cpp" />
+    <ClCompile Include="Data\Banks\Online\Sally%27 Finances\Accounts\sfSavingsD.cpp" />
+    <ClCompile Include="Data\Banks\In Person\BanksD_I.cpp" />
+    <ClCompile Include="Choices\Banks\In Person\BanksC_I.cpp" />
+    <ClCompile Include="Data\Banks\In Person\Regions\usBanksD_I.cpp" />
+    <ClCompile Include="Data\Banks\In Person\Regions\United States\moBanksD_I.cpp" />
+    <ClCompile Include="Data\Banks\In Person\Regions\United States\Missouri\kcmoBanksD_I.cpp" />
+    <ClCompile Include="Choices\Banks\In Person\United States\Missouri\kcmoBanksC_I.cpp" />
+    <ClCompile Include="Data\Banks\In Person\Regions\United States\Missouri\Kansas City\spbBankD_I.cpp" />
+    <ClCompile Include="Choices\Banks\In Person\United States\Missouri\Kansas City\spbBankC_I.cpp" />
+    <ClCompile Include="Data\Banks\In Person\Regions\United States\Missouri\Kansas City\Summit Prairie Bank\spbCheckingsD.cpp" />
+    <ClCompile Include="Data\Banks\In Person\Regions\United States\Missouri\Kansas City\Summit Prairie Bank\spbSavingsD.cpp" />
+    <ClCompile Include="Data\Banks\In Person\Regions\United States\Missouri\Kansas City\phBankD_I.cpp" />
+    <ClCompile Include="Choices\Banks\In Person\United States\Missouri\Kansas City\phBankC_I.cpp" />
+    <ClCompile Include="Data\Banks\In Person\Regions\United States\Missouri\Kansas City\Plaza Horizons\phCheckingsD.cpp" />
+    <ClCompile Include="Data\Banks\In Person\Regions\United States\Missouri\Kansas City\Plaza Horizons\phSavingD.cpp" />
+    <ClCompile Include="Data\Banks\In Person\Regions\United States\Missouri\slmoBanksD_I.cpp" />
+    <ClCompile Include="Choices\Banks\In Person\United States\Missouri\slmoBanksC_I.cpp" />
+    <ClCompile Include="Data\Banks\In Person\Regions\United States\Missouri\St. Louis\ghbBankD_I.cpp" />
+    <ClCompile Include="Choices\Banks\In Person\United States\Missouri\St. Louis\ghbBankC_I.cpp" />
+    <ClCompile Include="Data\Banks\In Person\Regions\United States\Missouri\St. Louis\Gateway heights bank\ghbCheckingsD.cpp" />
+    <ClCompile Include="Data\Banks\In Person\Regions\United States\Missouri\St. Louis\Gateway heights bank\ghbSavingsD.cpp" />
+    <ClCompile Include="Data\Banks\In Person\Regions\United States\Missouri\St. Louis\afgBankD_I.cpp" />
+    <ClCompile Include="Choices\Banks\In Person\United States\Missouri\St. Louis\afgBankC_I.cpp" />
+    <ClCompile Include="Data\Banks\In Person\Regions\United States\Missouri\St. Louis\ArchCity Financial Group\afgCheckingsD.cpp" />
+    <ClCompile Include="Data\Banks\In Person\Regions\United States\Missouri\St. Louis\ArchCity Financial Group\afgSavingsD.cpp" />
+    <ClCompile Include="Data\Jobs\JobsD.cpp" />
+    <ClCompile Include="Choices\Jobs\JobsC.cpp" />
+    <ClCompile Include="Data\Jobs\Online\JobsD_O.cpp" />
+    <ClCompile Include="Choices\Jobs\Online\JobsC_O.cpp" />
+    <ClCompile Include="Data\Jobs\Online\Mashup Inc\miJobsD_O.cpp" />
+    <ClCompile Include="Choices\Jobs\Online\Mashup inc\miJobsC_O.cpp" />
+    <ClCompile Include="Data\Jobs\Online\Mashup Inc\Positions\miPositionsD.cpp" />
+    <ClCompile Include="Data\Shops\ShopsD.cpp" />
+    <ClCompile Include="Choices\Shops\ShopsC.cpp" />
+    <ClCompile Include="Data\Shops\Online\ShopsD_O.cpp" />
+    <ClCompile Include="Choices\Shops\Online\ShopsC_O.cpp" />
+    <ClCompile Include="Data\Shops\In Person\ShopsD_I.cpp" />
+    <ClCompile Include="Data\Shops\In Person\Regions\usShopsD_I.cpp" />
+    <ClCompile Include="Data\Shops\In Person\Regions\United States\moShopsD_I.cpp" />
+    <ClCompile Include="Data\Shops\In Person\Regions\United States\Missouri\kcmoShopsD_I.cpp" />
+    <ClCompile Include="Choices\Shops\In Person\Regions\United States\Missouri\Kansas City\kcmoShopsC_I.cpp" />
+    <ClCompile Include="Dependencies\Includes\affShopE.cpp" />
+    <ClCompile Include="Economy\Shops\In Person\Regions\United States\Missouri\Kansas City\phairportShopE.cpp" />
+    <ClCompile Include="Tables\Shops\In Person\Regions\United States\Missouri\Kansas City\kcmoShopsT_I.cpp" />
+    <ClCompile Include="Economy\Shops\In Person\Regions\United States\Missouri\kcmoShopsE_I.cpp" />
+    <ClCompile Include="Economy\Shops\Online\Mashup Inc\miShopE_O.cpp" />
+    <ClCompile Include="Tables\Shops\Online\ShopsT_O.cpp" />
+    <ClCompile Include="Economy\Shops\In Person\ShopsE_I.cpp" />
+    <ClCompile Include="Economy\Shops\Online\ShopsE_O.cpp" />
+    <ClCompile Include="Tables\Shops\ShopsT.cpp" />
+    <ClCompile Include="Economy\Shops\ShopsE.cpp" />
+    <ClCompile Include="Economy\Jobs\Online\Mashup Inc\miPositionsE.cpp" />
+    <ClCompile Include="Tables\Jobs\Online\Mashup inc\miJobsT_O.cpp" />
+    <ClCompile Include="Economy\Jobs\Online\Mashup Inc\Positions\miJobsE_O.cpp" />
+    <ClCompile Include="Tables\Jobs\Online\JobsT_O.cpp" />
+    <ClCompile Include="Economy\Jobs\Online\JobsE_O.cpp" />
+    <ClCompile Include="Tables\Jobs\JobsT.cpp" />
+    <ClCompile Include="Economy\Jobs\JobsE.cpp" />
+    <ClCompile Include="Text Formatting\Banks\In Person\United Statees\Missouri\St. Louis\afgSavingsTF.cpp" />
+    <ClCompile Include="Economy\Banks\In Person\Regions\United States\Missouri\St. Louis\ArchCity Financial Group\afgSavingsE.cpp" />
+    <ClCompile Include="Text Formatting\Banks\In Person\United Statees\Missouri\St. Louis\afgCheckingsTF.cpp" />
+    <ClCompile Include="Economy\Banks\In Person\Regions\United States\Missouri\St. Louis\ArchCity Financial Group\afgCheckingsE.cpp" />
+    <ClCompile Include="Tables\Banks\In Person\United States\Missouri\St. Louis\afgBankT_I.cpp" />
+    <ClCompile Include="Economy\Banks\In Person\Regions\United States\Missouri\St. Louis\afgBankE_I.cpp" />
+    <ClCompile Include="Text Formatting\Banks\In Person\United Statees\Missouri\St. Louis\Gateway Heights Bank\ghbSavingsTF.cpp" />
+    <ClCompile Include="Economy\Banks\In Person\Regions\United States\Missouri\St. Louis\Gateway Heights Bank\ghbSavingsE.cpp" />
+    <ClCompile Include="Text Formatting\Banks\In Person\United Statees\Missouri\St. Louis\Gateway Heights Bank\ghbCheckingsTF.cpp" />
+    <ClCompile Include="Economy\Banks\In Person\Regions\United States\Missouri\St. Louis\Gateway Heights Bank\ghbCheckingsE.cpp" />
+    <ClCompile Include="Tables\Banks\In Person\United States\Missouri\St. Louis\ghbBankT_I.cpp" />
+    <ClCompile Include="Economy\Banks\In Person\Regions\United States\Missouri\St. Louis\ghbBankE_I.cpp" />
+    <ClCompile Include="Tables\Banks\In Person\United States\Missouri\slmoBanksT_I.cpp" />
+    <ClCompile Include="Text Formatting\Banks\In Person\United Statees\Missouri\Kansas City\Plaza Horizon\phSavingsTF.cpp" />
+    <ClCompile Include="Economy\Banks\In Person\Regions\United States\Missouri\Kansas City\Plaza Horizon\phSavingsE.cpp" />
+    <ClCompile Include="Text Formatting\Banks\In Person\United Statees\Missouri\Kansas City\Plaza Horizon\phCheckingsTF.cpp" />
+    <ClCompile Include="Economy\Banks\In Person\Regions\United States\Missouri\Kansas City\Plaza Horizon\phCheckingsE.cpp" />
+    <ClCompile Include="Tables\Banks\In Person\United States\Missouri\Kansas City\phBankT_I.cpp" />
+    <ClCompile Include="Economy\Banks\In Person\Regions\United States\Missouri\Kansas City\phBankE_I.cpp" />
+    <ClCompile Include="Text Formatting\Banks\In Person\United Statees\Missouri\Kansas City\Summit Prairie Bank%27\spbSavingsTF.cpp" />
+    <ClCompile Include="Economy\Banks\In Person\Regions\United States\Missouri\Kansas City\Summit Prairie Bank\spbSavingsE.cpp" />
+    <ClCompile Include="Text Formatting\Banks\In Person\United Statees\Missouri\Kansas City\Summit Prairie Bank%27\spbCheckingsTF.cpp" />
+    <ClCompile Include="Economy\Banks\In Person\Regions\United States\Missouri\Kansas City\Summit Prairie Bank\spbCheckingsE.cpp" />
+    <ClCompile Include="Tables\Banks\In Person\United States\Missouri\Kansas City\spbBankT_I.cpp" />
+    <ClCompile Include="Economy\Banks\In Person\Regions\United States\Missouri\Kansas City\spbBankE_I.cpp" />
+    <ClCompile Include="Tables\Banks\In Person\United States\Missouri\kcmoBanksT_I.cpp" />
+    <ClCompile Include="Economy\Banks\In Person\Regions\United States\Missouri\kcmoBanksE_I.cpp" />
+    <ClCompile Include="Economy\Banks\In Person\Regions\United States\Missouri\slmoBanksE_I.cpp" />
+    <ClCompile Include="Economy\Banks\In Person\BanksE_I.cpp" />
+    <ClCompile Include="Text Formatting\Banks\Online\Sally%27s Finances\sfSavingsTF.cpp" />
+    <ClCompile Include="Economy\Banks\Online\Sally%27s Finances\Accounts\sfSavingsE.cpp" />
+    <ClCompile Include="Text Formatting\Banks\Online\Sally%27s Finances\sfCheckingsTF.cpp" />
+    <ClCompile Include="Economy\Banks\Online\Sally%27s Finances\Accounts\sfCheckingsE.cpp" />
+    <ClCompile Include="Tables\Banks\Online\Sally%27s Finances\sfBankT_O.cpp" />
+    <ClCompile Include="Economy\Banks\Online\Sally%27s Finances\sfBankE_O.cpp" />
+    <ClCompile Include="Other\TemporaryO.cpp" />
+    <ClCompile Include="Text Formatting\Banks\Online\Mashup Inc\miSavingsTF.cpp" />
+    <ClCompile Include="Economy\Banks\Online\Mashup Inc\Accounts\miSavingsE.cpp" />
+    <ClCompile Include="Text Formatting\Banks\Online\Mashup Inc\miCheckingsTF.cpp" />
+    <ClCompile Include="Economy\Banks\Online\Mashup Inc\Accounts\miCheckingsE.cpp" />
+    <ClCompile Include="Tables\Banks\Online\Mashup Inc\miBankT_O.cpp" />
+    <ClCompile Include="Economy\Banks\Online\Mashup Inc\miBankE_O.cpp" />
+    <ClCompile Include="Tables\Banks\Online\BanksT_O.cpp" />
+    <ClCompile Include="Economy\Banks\Online\BanksE_O.cpp" />
+    <ClCompile Include="Tables\Banks\BanksT.cpp" />
+    <ClCompile Include="Economy\Banks\BanksE.cpp" />
+    <ClCompile Include="Economy\OtherE.cpp" />
+    <ClCompile Include="Other\ReuseO.cpp" />
+    <ClCompile Include="Other\AppO.cpp" />
+    <ClCompile Include="Tables\AppT.cpp" />
+    <ClCompile Include="Other\RandomO.cpp" />
+    <ClCompile Include="Other\Universal\Universal.cpp" />
+    <ClCompile Include="Text Formatting\AppTF.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Dependencies\Includes\affShopE.h" />
+    <ClInclude Include="Dependencies\Includes\afgBankC_I.h" />
+    <ClInclude Include="Dependencies\Includes\afgBankD_I.h" />
+    <ClInclude Include="Dependencies\Includes\afgBankE_I.h" />
+    <ClInclude Include="Dependencies\Includes\afgBankT_I.h" />
+    <ClInclude Include="Dependencies\Includes\afgCheckingsD.h" />
+    <ClInclude Include="Dependencies\Includes\afgCheckingsE.h" />
+    <ClInclude Include="Dependencies\Includes\afgCheckingsTF.h" />
+    <ClInclude Include="Dependencies\Includes\afgSavingsD.h" />
+    <ClInclude Include="Dependencies\Includes\afgSavingsE.h" />
+    <ClInclude Include="Dependencies\Includes\afgSavingsTF.h" />
+    <ClInclude Include="Dependencies\Includes\AppC.h" />
+    <ClInclude Include="Dependencies\Includes\AppO.h" />
+    <ClInclude Include="Dependencies\Includes\AppD.h" />
+    <ClInclude Include="Dependencies\Includes\AppT.h" />
+    <ClInclude Include="Dependencies\Includes\AppTF.h" />
+    <ClInclude Include="Dependencies\Includes\BanksC.h" />
+    <ClInclude Include="Dependencies\Includes\BanksC_I.h" />
+    <ClInclude Include="Dependencies\Includes\BanksC_O.h" />
+    <ClInclude Include="Dependencies\Includes\BanksD.h" />
+    <ClInclude Include="Dependencies\Includes\BanksD_I.h" />
+    <ClInclude Include="Dependencies\Includes\BanksE_I.h" />
+    <ClInclude Include="Dependencies\Includes\BanksD_O.h" />
+    <ClInclude Include="Dependencies\Includes\BanksE.h" />
+    <ClInclude Include="Dependencies\Includes\BanksE_O.h" />
+    <ClInclude Include="Dependencies\Includes\BanksT.h" />
+    <ClInclude Include="Dependencies\Includes\BanksT_O.h" />
+    <ClInclude Include="Dependencies\Includes\BaseO.h" />
+    <ClInclude Include="Dependencies\Includes\External\nlohmann\json.hpp" />
+    <ClInclude Include="Dependencies\Includes\ghbBankC_I.h" />
+    <ClInclude Include="Dependencies\Includes\ghbBankD_I.h" />
+    <ClInclude Include="Dependencies\Includes\ghbBankE_I.h" />
+    <ClInclude Include="Dependencies\Includes\ghbBankT_I.h" />
+    <ClInclude Include="Dependencies\Includes\ghbCheckingsD.h" />
+    <ClInclude Include="Dependencies\Includes\ghbCheckingsE.h" />
+    <ClInclude Include="Dependencies\Includes\ghbCheckingsTF.h" />
+    <ClInclude Include="Dependencies\Includes\ghbSavingsD.h" />
+    <ClInclude Include="Dependencies\Includes\ghbSavingsE.h" />
+    <ClInclude Include="Dependencies\Includes\ghbSavingsTF.h" />
+    <ClInclude Include="Dependencies\Includes\JobsC.h" />
+    <ClInclude Include="Dependencies\Includes\JobsC_O.h" />
+    <ClInclude Include="Dependencies\Includes\JobsD.h" />
+    <ClInclude Include="Dependencies\Includes\JobsD_O.h" />
+    <ClInclude Include="Dependencies\Includes\JobsE.h" />
+    <ClInclude Include="Dependencies\Includes\JobsE_O.h" />
+    <ClInclude Include="Dependencies\Includes\JobsT.h" />
+    <ClInclude Include="Dependencies\Includes\JobsT_O.h" />
+    <ClInclude Include="Dependencies\Includes\kcmoBanksC_I.h" />
+    <ClInclude Include="Dependencies\Includes\kcmoBanksD_I.h" />
+    <ClInclude Include="Dependencies\Includes\kcmoBanksE_I.h" />
+    <ClInclude Include="Dependencies\Includes\kcmoBanksT_I.h" />
+    <ClInclude Include="Dependencies\Includes\kcmoShopsC_I.h" />
+    <ClInclude Include="Dependencies\Includes\kcmoShopsD_I.h" />
+    <ClInclude Include="Dependencies\Includes\kcmoShopsE_I.h" />
+    <ClInclude Include="Dependencies\Includes\kcmoShopsT_I.h" />
+    <ClInclude Include="Dependencies\Includes\miBankC_O.h" />
+    <ClInclude Include="Dependencies\Includes\miBankD_O.h" />
+    <ClInclude Include="Dependencies\Includes\miBankE_O.h" />
+    <ClInclude Include="Dependencies\Includes\miBankT_O.h" />
+    <ClInclude Include="Dependencies\Includes\miCheckingsD.h" />
+    <ClInclude Include="Dependencies\Includes\miCheckingsE.h" />
+    <ClInclude Include="Dependencies\Includes\miCheckingsTF.h" />
+    <ClInclude Include="Dependencies\Includes\miJobsC_O.h" />
+    <ClInclude Include="Dependencies\Includes\miJobsE_O.h" />
+    <ClInclude Include="Dependencies\Includes\miJobsT_O.h" />
+    <ClInclude Include="Dependencies\Includes\miPositionsD.h" />
+    <ClInclude Include="Dependencies\Includes\miPositionsE.h" />
+    <ClInclude Include="Dependencies\Includes\miSavingsD.h" />
+    <ClInclude Include="Dependencies\Includes\miSavingsE.h" />
+    <ClInclude Include="Dependencies\Includes\miSavingsTF.h" />
+    <ClInclude Include="Dependencies\Includes\miShopE_O.h" />
+    <ClInclude Include="Dependencies\Includes\moBanksD_I.h" />
+    <ClInclude Include="Dependencies\Includes\moShopsD_I.h" />
+    <ClInclude Include="Dependencies\Includes\OtherE.h" />
+    <ClInclude Include="Dependencies\Includes\phairportShopE.h" />
+    <ClInclude Include="Dependencies\Includes\phBankC_I.h" />
+    <ClInclude Include="Dependencies\Includes\phBankD_I.h" />
+    <ClInclude Include="Dependencies\Includes\phBankE_I.h" />
+    <ClInclude Include="Dependencies\Includes\phBankT_I.h" />
+    <ClInclude Include="Dependencies\Includes\phCheckingsD.h" />
+    <ClInclude Include="Dependencies\Includes\phCheckingsE.h" />
+    <ClInclude Include="Dependencies\Includes\phCheckingsTF.h" />
+    <ClInclude Include="Dependencies\Includes\phSavingsD.h" />
+    <ClInclude Include="Dependencies\Includes\phSavingsE.h" />
+    <ClInclude Include="Dependencies\Includes\phSavingsTF.h" />
+    <ClInclude Include="Dependencies\Includes\RandomO.h" />
+    <ClInclude Include="Dependencies\Includes\ReuseO.h" />
+    <ClInclude Include="Dependencies\Includes\sfBankC_O.h" />
+    <ClInclude Include="Dependencies\Includes\sfBankD_O.h" />
+    <ClInclude Include="Dependencies\Includes\sfBankE_O.h" />
+    <ClInclude Include="Dependencies\Includes\sfBankT_O.h" />
+    <ClInclude Include="Dependencies\Includes\sfCheckingsD.h" />
+    <ClInclude Include="Dependencies\Includes\sfCheckingsE.h" />
+    <ClInclude Include="Dependencies\Includes\sfCheckingsTF.h" />
+    <ClInclude Include="Dependencies\Includes\sfSavingsD.h" />
+    <ClInclude Include="Dependencies\Includes\sfSavingsE.h" />
+    <ClInclude Include="Dependencies\Includes\sfSavingsTF.h" />
+    <ClInclude Include="Dependencies\Includes\ShopsC.h" />
+    <ClInclude Include="Dependencies\Includes\ShopsC_O.h" />
+    <ClInclude Include="Dependencies\Includes\ShopsD.h" />
+    <ClInclude Include="Dependencies\Includes\ShopsD_I.h" />
+    <ClInclude Include="Dependencies\Includes\ShopsD_O.h" />
+    <ClInclude Include="Dependencies\Includes\ShopsE.h" />
+    <ClInclude Include="Dependencies\Includes\ShopsE_I.h" />
+    <ClInclude Include="Dependencies\Includes\ShopsE_O.h" />
+    <ClInclude Include="Dependencies\Includes\ShopsT.h" />
+    <ClInclude Include="Dependencies\Includes\ShopsT_O.h" />
+    <ClInclude Include="Dependencies\Includes\slmoBanksC_I.h" />
+    <ClInclude Include="Dependencies\Includes\slmoBanksD_I.h" />
+    <ClInclude Include="Dependencies\Includes\slmoBanksE_I.h" />
+    <ClInclude Include="Dependencies\Includes\slmoBanksT_I.h" />
+    <ClInclude Include="Dependencies\Includes\spbBankC_I.h" />
+    <ClInclude Include="Dependencies\Includes\spbBankD_I.h" />
+    <ClInclude Include="Dependencies\Includes\spbBankE_I.h" />
+    <ClInclude Include="Dependencies\Includes\spbBankT_I.h" />
+    <ClInclude Include="Dependencies\Includes\spbCheckingsD.h" />
+    <ClInclude Include="Dependencies\Includes\spbCheckingsE.h" />
+    <ClInclude Include="Dependencies\Includes\spbCheckingsTF.h" />
+    <ClInclude Include="Dependencies\Includes\spbSavingsD.h" />
+    <ClInclude Include="Dependencies\Includes\spbSavingsE.h" />
+    <ClInclude Include="Dependencies\Includes\spbSavingsTF.h" />
+    <ClInclude Include="Dependencies\Includes\TemporaryO.h" />
+    <ClInclude Include="Dependencies\Includes\Universal\Universal.h" />
+    <ClInclude Include="Dependencies\Includes\usBanksD_I.h" />
+    <ClInclude Include="Dependencies\Includes\miJobsD_O.h" />
+    <ClInclude Include="Dependencies\Includes\usShopsD_I.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
